@@ -27,6 +27,13 @@ public class Task {
         this.status = "pending";
     }
 
+    public Task(UUID id, String title, String description, String status) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.status = status;
+    }
+
     /**
      * Get the ID of the task
      * @return The unique ID of the task
