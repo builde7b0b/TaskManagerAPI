@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class TaskService {
 
-    private final List<Task> tasks = new ArrayList<>(); //List to store the tasks
+    private static final List<Task> tasks = new ArrayList<>(); //List to store the tasks
 
     /**
      * Get the list of taks
@@ -31,7 +31,7 @@ public class TaskService {
      * @param task The task to be added.
      * @return The added task.
      */
-    public Task addTask(Task task) {
+    public static Task addTask(Task task) {
         tasks.add(task);
         return task;
 
