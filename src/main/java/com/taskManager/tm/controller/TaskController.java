@@ -17,6 +17,8 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api")
 public class TaskController {
+// http://localhost:8080/api
+    //http://localhost:8080/api/tasks
 
     private final TaskService taskService;
 
